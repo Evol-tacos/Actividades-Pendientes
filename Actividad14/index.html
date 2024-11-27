@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Este meta
+        tag asegura que la pagina se vea correctamente en diferentes dispositivos-->
+        <title>Sitio web responsive</title>
+        <link rel="stylesheet" href="styles.css"> <!--Enlazamos el archivo css-->
+    </head>
+    <body>
+        <!--Comienza la cabecera del sitio web-->
+        <header>
+            <nav class="header">
+                <div class="logo">Mi sitio web</div><!--Logo del sitio web-->
+
+                <!--Icono de menu que solo se mostrara en pantalla moviles-->
+                <div class="menu-icon" onclick="toggleMenu()"><!--Este icono permite abrir
+                    y cerrar el menu en pantallas pequeñas-->
+                    <span class="bar"></span>   
+                    <span class="bar"></span>   
+                    <span class="bar"></span>   
+                </div>
+
+                <!--Menu de navegacion-->
+                <ul class="nav-links" id="navLinks"><!--Lista de enalces de navegacion-->
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Seccion principal de bienvenida-->
+        <section class="hero">
+            <h1>Bienvenido a mi sitio web responsive</h1>
+            <p>Este es un sitio web que se adapta a difirentes dispositivos y pantallas</p>
+        </section>
+        <!--Seccion de servicios-->
+        <section class="services">
+            <h2>Nuestros servicios</h2>
+            <div class="service-box">
+                <h3>Servicio 1</h3>
+                <p>Descripcion del servicio 1.</p>
+            </div>
+            <div class="service-box">
+                <h3>Servicio 2</h3>
+                <p>Descripcion del servicio 2.</p>
+            </div>
+            <div class="service-box">
+                <h3>Servicio 3</h3>
+                <p>Descripcion del servicio 3.</p>
+            </div>
+        </section>
+        
+        <!--Pie de pagina-->
+        <footer>
+            <p>2024 Mi sitio web - Todos los derechos reservados</p>
+        </footer>
+
+        <!--Enlazar el archivo de JavaScript-->
+        <script src="script.js"></script>
+    </body>
+</html>

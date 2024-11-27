@@ -1,0 +1,118 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto asegura que los márgenes y rellenos se calculen de manera consistente */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente por defecto */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribuye el logo y el menú de manera equitativa */
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos del menú de navegación */
+.nav-links {
+    list-style: none; /* Elimina los puntos de lista */
+    display: flex; /* Muestra los enlaces en fila */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre los elementos del menú */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px;
+}
+
+/* Estilos del icono de menú hamburguesa (solo visible en móviles) */
+.menu-icon {
+    display: none; /* No se muestra por defecto (se activará en móviles) */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0; /* Cada barra tiene una pequeña separación */
+}
+
+/* Estilos de la sección hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+.hero p{
+    font-size: 1.2em;
+    color: #555;
+}
+
+/*Estilos de la seccion de servicios*/
+.services{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.service-box{
+    margin: 20px;
+    padding: 20px;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+/*Estilos del pie de pagina*/
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/*----------- Responsive Styles --------------*/
+/*Comienza el codigo que hace responsive la pagina*/
+@media (max-width: 768px) { /*Este bloque CSS se activa en pantallas con un ancho maximo de 
+    768px (estandar en dispositivos moviles y tablets)*/
+    .nav-links{
+        display: none;/*Oculta el menu de navegacion en pantallas pequeñas*/
+        flex-direction: column;/* Cambia de direccion los enlaces del menu a una columna*/
+    }
+
+    .menu-icon{
+        display: flex; /* el icono de menu hamburguesa se muestra en moviles y tabletas*/
+    }
+
+    .navbar{
+        flex-direction: column;/* el menu y el logo se apilan uno debajo del otro*/
+    }
+}
