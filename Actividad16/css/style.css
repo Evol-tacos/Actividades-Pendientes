@@ -1,0 +1,19 @@
+body {
+    background-image: linear-gradient(to bottom, #87CEEB, #ffcdac);
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+#visor{
+    background-color: transparent;
+    border: none;
+}
+.container i{
+    position: absolute;
+    right: 20px;
+    top: 115px;
+}
